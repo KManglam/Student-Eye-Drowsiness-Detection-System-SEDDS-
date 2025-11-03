@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - SEDDS{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <!-- Hero Section -->
+        <div class="text-center text-white mb-5">
+            <h1 class="display-4 fw-bold mb-4">
+                <i class="fas fa-eye me-3"></i>
+                Student Eye Drowsiness Detection System
+            </h1>
+            <p class="lead mb-4">
+                AI-powered real-time monitoring system to detect drowsiness and improve learning focus
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="{% url 'register' %}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-user-plus me-2"></i>Get Started
+                </a>
+                <a href="{% url 'login' %}" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-sign-in-alt me-2"></i>Login
+                </a>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <i class="fas fa-video fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Real-time Detection</h5>
+                        <p class="card-text">
+                            Advanced computer vision algorithms monitor your eye movements in real-time using your webcam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <i class="fas fa-bell fa-3x text-warning"></i>
+                        </div>
+                        <h5 class="card-title">Smart Alerts</h5>
+                        <p class="card-text">
+                            Instant audio alerts when drowsiness is detected, helping you stay focused during study sessions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <i class="fas fa-chart-line fa-3x text-success"></i>
+                        </div>
+                        <h5 class="card-title">Session Analytics</h5>
+                        <p class="card-text">
+                            Detailed reports and statistics to track your study patterns and improve focus over time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works Section -->
+        <div class="card mb-5">
+            <div class="card-body">
+                <h2 class="text-center mb-4">How It Works</h2>
+                <div class="row g-4">
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <span class="fw-bold">1</span>
+                            </div>
+                        </div>
+                        <h6>Register & Login</h6>
+                        <p class="small text-muted">Create your account and login to access the monitoring system</p>
+                    </div>
+                    
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <span class="fw-bold">2</span>
+                            </div>
+                        </div>
+                        <h6>Start Monitoring</h6>
+                        <p class="small text-muted">Begin your study session with real-time eye tracking</p>
+                    </div>
+                    
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <span class="fw-bold">3</span>
+                            </div>
+                        </div>
+                        <h6>Get Alerts</h6>
+                        <p class="small text-muted">Receive instant notifications when drowsiness is detected</p>
+                    </div>
+                    
+                    <div class="col-md-3 text-center">
+                        <div class="mb-3">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <span class="fw-bold">4</span>
+                            </div>
+                        </div>
+                        <h6>View Reports</h6>
+                        <p class="small text-muted">Analyze your session data and improve study habits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Section -->
+        <div class="card mb-5">
+            <div class="card-body">
+                <h2 class="text-center mb-4">Technology Stack</h2>
+                <div class="row g-3">
+                    <div class="col-md-2 col-4 text-center">
+                        <i class="fab fa-python fa-2x text-primary mb-2"></i>
+                        <p class="small">Python</p>
+                    </div>
+                    <div class="col-md-2 col-4 text-center">
+                        <i class="fab fa-html5 fa-2x text-danger mb-2"></i>
+                        <p class="small">Django</p>
+                    </div>
+                    <div class="col-md-2 col-4 text-center">
+                        <i class="fas fa-database fa-2x text-success mb-2"></i>
+                        <p class="small">SQLite</p>
+                    </div>
+                    <div class="col-md-2 col-4 text-center">
+                        <i class="fas fa-eye fa-2x text-info mb-2"></i>
+                        <p class="small">OpenCV</p>
+                    </div>
+                    <div class="col-md-2 col-4 text-center">
+                        <i class="fas fa-brain fa-2x text-warning mb-2"></i>
+                        <p class="small">MediaPipe</p>
+                    </div>
+                    <div class="col-md-2 col-4 text-center">
+                        <i class="fab fa-js-square fa-2x text-primary mb-2"></i>
+                        <p class="small">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center text-white">
+            <h3 class="mb-3">Ready to Improve Your Study Focus?</h3>
+            <p class="mb-4">Join thousands of students using AI-powered drowsiness detection</p>
+            <a href="{% url 'register' %}" class="btn btn-primary btn-lg pulse">
+                <i class="fas fa-rocket me-2"></i>Start Your Journey
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
